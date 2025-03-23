@@ -1,3 +1,7 @@
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
+
 // Import all CSS files
 import './css/style.css';
 import './css/animations.css';
