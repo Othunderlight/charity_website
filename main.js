@@ -25,20 +25,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Mobile menu toggle
     const createMobileMenu = () => {
-        const header = document.querySelector('header');
+        const header = document.querySelector('.header-container');
         const nav = document.querySelector('nav');
         
         if (header && nav) {
-            const mobileMenuBtn = document.createElement('div');
-            mobileMenuBtn.className = 'mobile-menu-btn';
-            mobileMenuBtn.innerHTML = '<span></span><span></span><span></span>';
-            
-            header.insertBefore(mobileMenuBtn, nav);
-            
-            mobileMenuBtn.addEventListener('click', function() {
-                nav.classList.toggle('active');
-                this.classList.toggle('active');
-            });
+            // Create mobile menu button if it doesn't exist
+            if (!document.querySelector('.mobile-menu-btn')) {
+                const mobileMenuBtn = document.createElement('div');
+                mobileMenuBtn.className = 'mobile-menu-btn';
+                mobileMenuBtn.innerHTML = '<span></span><span></span><span></span>';
+                
+                // Insert before nav element within header
+                header.insertBefore(mobileMenuBtn, nav);
+                
+                mobileMenuBtn.addEventListener('click', function() {
+                    nav.classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            }
         }
     };
     
@@ -46,6 +50,19 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth <= 768) {
         createMobileMenu();
     }
+    
+    // Handle resize events
+    window.addEventListener('resize', () => {
+        if (window.innerWidth <= 768) {
+            createMobileMenu();
+        } else {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            if (mobileMenuBtn) {
+                mobileMenuBtn.remove();
+            }
+            document.querySelector('nav')?.classList.remove('active');
+        }
+    });
     
     // Add active class to current page in navigation
     const currentPage = window.location.pathname.split('/').pop();
