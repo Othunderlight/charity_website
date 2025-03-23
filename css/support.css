@@ -1,0 +1,384 @@
+/* Additional CSS for Support page */
+
+/* Support Options */
+.support-options {
+  padding: 60px 0;
+  background-color: var(--light-color);
+}
+
+.support-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.support-option-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: var(--white-color);
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.support-option-icon {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.support-option-card h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.support-option-card .btn {
+  margin-top: 15px;
+}
+
+/* Donate Sections */
+.donate-medicine, .donate-money {
+  padding: 80px 0;
+}
+
+.donate-money {
+  background-color: var(--light-color);
+}
+
+.donate-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.donate-text, .donate-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.donate-text h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.donate-text ul {
+  margin-bottom: 20px;
+}
+
+.donate-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Medicine List */
+.medicine-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.medicine-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.medicine-list li i {
+  margin-left: 10px;
+  color: var(--primary-color);
+}
+
+/* Donation Usage */
+.donation-usage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.usage-item {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.usage-percentage {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+/* Volunteer Section */
+.volunteer-section {
+  padding: 80px 0;
+}
+
+.volunteer-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.volunteer-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.volunteer-option {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--white-color);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.volunteer-icon {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.volunteer-option h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.volunteer-option ul {
+  padding-right: 20px;
+}
+
+.volunteer-option ul li {
+  margin-bottom: 10px;
+}
+
+/* Volunteer Benefits */
+.volunteer-benefits {
+  margin-bottom: 40px;
+}
+
+.volunteer-benefits h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 15px 20px;
+  border-radius: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon {
+  margin-left: 10px;
+  color: var(--primary-color);
+}
+
+/* Volunteer CTA */
+.volunteer-cta, .corporate-cta, .donation-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.volunteer-cta h3, .corporate-cta h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.volunteer-cta .btn, .corporate-cta .btn, .donation-cta .btn {
+  margin-top: 15px;
+}
+
+/* Corporate Section */
+.corporate-section {
+  padding: 80px 0;
+  background-color: var(--light-color);
+}
+
+.corporate-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.partnership-options {
+  margin: 30px 0;
+}
+
+.partnership-option {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.partnership-icon {
+  margin-left: 20px;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.partnership-text h4 {
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.partnership-benefits {
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
+
+.partnership-benefits li {
+  margin-bottom: 10px;
+}
+
+/* Current Needs Section */
+.current-needs {
+  padding: 80px 0;
+}
+
+.needs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.need-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background-color: var(--white-color);
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.need-card:hover {
+  transform: translateY(-5px);
+}
+
+.need-icon {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.need-card h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.need-urgency {
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.need-urgency.high {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.need-urgency.medium {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.need-urgency.low {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+/* Contact Support Section */
+.contact-support {
+  padding: 80px 0;
+  background-color: var(--light-color);
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  background-color: var(--white-color);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  margin-left: 10px;
+  color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .donate-content {
+    flex-direction: column;
+  }
+  
+  .donate-money .donate-content {
+    flex-direction: column-reverse;
+  }
+  
+  .partnership-option {
+    flex-direction: column;
+  }
+  
+  .partnership-icon {
+    margin-left: 0;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+  
+  .benefit-item {
+    width: 100%;
+  }
+}

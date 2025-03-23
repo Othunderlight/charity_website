@@ -1,0 +1,6 @@
+--2025-03-23 06:18:56--  https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/470574409_1057946436347586_6568628908110059186_n.jpg?_nc_cat=107
+Resolving scontent-sjc3-1.xx.fbcdn.net (scontent-sjc3-1.xx.fbcdn.net)... 157.240.22.25, 2a03:2880:f031:19:face:b00c:0:3
+Connecting to scontent-sjc3-1.xx.fbcdn.net (scontent-sjc3-1.xx.fbcdn.net)|157.240.22.25|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-03-23 06:18:56 ERROR 403: Forbidden.
+
